@@ -1,0 +1,24 @@
+{
+  "name": "spacex_launch_missions",
+  "version": "1.0.0",
+  "description": "tutorial_follow-https://www.youtube.com/watch?v=SEMTj8w04Z8",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "keywords": [
+    "tutorial",
+    "React",
+    "GraphQL",
+    "Express"
+  ],
+  "author": "Eric",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.2.1"
+  }
+}
