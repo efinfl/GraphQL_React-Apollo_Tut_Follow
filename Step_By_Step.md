@@ -30,8 +30,8 @@ https://github.com/graphql/express-graphql has starter code to copy paste the be
 
 ### Import Dependencies:
 
-    - const express = require("express");
-    - const graphqlHTTP = require("express-graphql");
+    const express = require("express");
+    const graphqlHTTP = require("express-graphql");
 
 ### Set up app.use
 
@@ -69,16 +69,70 @@ https://github.com/graphql/express-graphql has starter code to copy paste the be
 ## Test endpoint using graphiql
 
 - choose a specific launch to get all it's data
-    ```
-      {
-          launch(flight_number: 2) {
-          mission_name,
-          launch_year,
-          launch_date_local,
-          launch_success,
-          rocket {
-              rocket_name
-              }
-          }
-      }
-    ```
+  ```
+    {
+        launch(flight_number: 2) {
+        mission_name,
+        launch_year,
+        launch_date_local,
+        launch_success,
+        rocket {
+            rocket_name
+            }
+        }
+    }
+  ```
+
+## Create a React app into a client folder
+
+- In the terminal type: create-react-app client
+
+## Install concurrently
+
+This allows you to run both the front-end port (3000) and back-end (5000) port at the same time.
+
+- Go into server (root) package.json and create the following scripts:
+  - "client": npm start --prefix client": _This will run the React application in the client folder_
+  - "dev": "concurrently \"npm run server\" \"npm run client\"": _This will run both the server and the client at the same time with one command (npm run dev) instead of doing npm run server and npm run client_
+
+## Do some clean up
+
+- App.css: keep the file but delete the css.
+- logo.svg: delete is it's the React logo you don't need that
+- App.js:
+  - Reference to logo: delete it
+  - Header: delete it
+  - Put SpaceX inside h1 tags: Use as placeholder text inside div
+
+## Clean add bootstrap custom them and title in public/index.html
+
+- go to bootswatch.com
+- Click on a theme
+- Click on download
+- Copy file into your src folder
+- Add link in the head
+- Remove all comments
+- Add title: SpaceX
+
+## Add SpaceX logo to the page
+
+- Import the logo
+- Add styled logo image
+- See App.js for details
+
+## Install apollo client
+Helps you quickly build a UI that fetches data with GraphQL
+- IMPORTANT: Make sure you install it in the client directory
+- npm install apollo-boost react-apollo graphql
+
+## Import all Apollo dependencies
+- App.js for details
+
+## Install ES7 React/Redux/GraphQL/React-Native snippets into VS code to help quickly create React, GraphQL code.
+
+## Create component folder in src folder
+- We'll work on a component called launches first.
+    - create lunches.js
+    - see launches.js for setup detail
+## Import and display Launches component in App.js
+- See App.js for details

@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [
     "tutorial",
@@ -16,9 +18,12 @@
   "author": "Eric",
   "license": "ISC",
   "dependencies": {
+    "@babel/runtime": "^7.4.4",
     "axios": "^0.18.0",
+    "concurrently": "^4.1.0",
     "express": "^4.16.4",
     "express-graphql": "^0.8.0",
-    "graphql": "^14.2.1"
+    "graphql": "^14.2.1",
+    "react-dev-utils": "^9.0.0"
   }
 }
