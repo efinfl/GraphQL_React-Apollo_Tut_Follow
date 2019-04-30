@@ -2,7 +2,7 @@
 
 Tutorial by Brad Traversy at https://www.youtube.com/watch?v=SEMTj8w04Z8
 
-## Create a server from Scratch
+## Back-End: Create a server from Scratch
 
 ### Initialize JSON package:
 
@@ -83,13 +83,13 @@ https://github.com/graphql/express-graphql has starter code to copy paste the be
     }
   ```
 
-## Create a React app into a client folder
+## Front-End: Create a React app into a client folder
 
 - In the terminal type: create-react-app client
 
-## Install concurrently
+## Install concurrent
 
-This allows you to run both the front-end port (3000) and back-end (5000) port at the same time.
+This allows you to run both the front-end port (3000) and back-end (5000) port with one command line
 
 - Go into server (root) package.json and create the following scripts:
   - "client": npm start --prefix client": _This will run the React application in the client folder_
@@ -121,18 +121,30 @@ This allows you to run both the front-end port (3000) and back-end (5000) port a
 - See App.js for details
 
 ## Install apollo client
+
 Helps you quickly build a UI that fetches data with GraphQL
+
 - IMPORTANT: Make sure you install it in the client directory
 - npm install apollo-boost react-apollo graphql
 
 ## Import all Apollo dependencies
+
 - App.js for details
 
 ## Install ES7 React/Redux/GraphQL/React-Native snippets into VS code to help quickly create React, GraphQL code.
 
 ## Create component folder in src folder
+
 - We'll work on a component called launches first.
-    - create lunches.js
-    - see launches.js for setup detail
+  - create lunches.js
+  - use ES7 React/Redux... keyboard shortcut RCE + tab to create an initial component
+  - import gql
+  - import {Query}
+  - create the query into launches
+  - see launches.js for setup detail
+
 ## Import and display Launches component in App.js
+
 - See App.js for details
+
+<!-- Stopped at https://www.youtube.com/watch?v=-XwkFm5a9lw 17:30 -->
