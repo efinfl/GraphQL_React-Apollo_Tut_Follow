@@ -1,4 +1,4 @@
 node_modules/
 
-# the React application will get built out into the pulic folder of the server for deployment
+# the React application will get built out into the pulic folder of the server for deployment not sure what that means yet
 # /client
